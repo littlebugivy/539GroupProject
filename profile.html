@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/eventPro.css">
+</head>
+
+<body class="main-container">
+  <header>
+    <div class="header_border">
+    <h1><a href="index.html" id="header_eventpro">EventPro</a></h1>
+    </div>    
+    <div class="header_border header_search_bar">
+    <input type="text" class="search_bar" placeholder="search something">
+    </div>
+    <div class="primary-nav header_border">
+      <nav>
+        <ul class="nav">
+          <li><a href="eventnearby.html" class="nowpage">events nearby</a></li><!--
+                 --><li><a href="supportcenter.html">support center</a></li><!--
+                 --><li class="drop-down"><a href="signin.html">sign in/register</a>
+                  <!--这里用JS改改-->
+                      <ul class="drop-down-content">
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="favorite.html">My Favorite</a></li>
+                      </ul>
+                  </li>
+        </ul> 
+      </nav>
+    </div>
+  </header>
+
+	<section id="my_profile">
+		<div class="my-col-1-3">
+			<h2>{{name}}</h2>
+			<img src="img/myself.png" alt="my_avatar_now" id="my_avatar_left">
+            <ul>
+                <li><a href="profile.html" class="my_link">My Profile</a></li>
+                <li><a href="favorite.html" class="my_link">My Favorite</a></li>
+            </ul>
+		</div><!--
+	--><aside class="my-col-2-3">
+			<form onsubmit="return checkMyForm()" id="myform">
+ 				 <fieldset>
+   				 <p>
+    			  	<label class="personal">
+      			 	user name<br>
+      			  	<input type="text" name="username" id="myusername" value="{{name}}">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="myusernameerrormsg">Please enter a valid user name</p>
+      		<p>		
+              <label>
+        			account email<br>
+        			<input type="email" name="accountemailaddr" id="myaccountemailaddr" value="{{accountemail}}">
+      				</label>
+    			</p>
+   				<p class="errormsg" id="myaccountemailerrormsg">Please enter a valid email</p>
+    			<p>
+    				<label>
+      			 	password<br>
+      			  	<input type="password" name="password" id="mypassword" value="{{password}}">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="mypassworderrormsg">Please enter a valid password</p>
+    			<p>
+    				<img src="img/myself.png" alt="my_avatar_change" id="my_avatar_right"><br>
+    				<label>upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
+   				<p>
+    				<label>
+      			 	phone number<br>
+      			  	<input type="text" name="phonenumber" id="myphonenumber" value="{{phonenumber}}">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="myphonenumbererrormsg">Please enter a valid phone number</p>
+			    </fieldset>
+  				<input type="submit" value="SAVE"> 
+			</form>
+		</aside>
+	</section>
+
+
+    <footer>
+		<div class="col-lg-6">
+			<h5>About our team:</h5>
+			<p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
+		</div><aside class="col-lg-6">
+	 		<h5>Email us:</h5>
+	 		<p>4webdesigner@umich.edu</p>
+	 		<p>&copy; 4webdesigners. All rights reserved</p>						
+		</aside>
+	</footer> 
+
+</body>
+</html>

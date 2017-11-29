@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Support Center</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/eventPro.css">
+</head>
+
+<body class="main-container">
+  
+  <header>
+    <div class="header_border">
+    <h1><a href="index.html" id="header_eventpro">EventPro</a></h1>
+    </div>    
+    <div class="header_border header_search_bar">
+    <input type="text" class="search_bar" placeholder="search something">
+    </div>
+    <div class="primary-nav header_border">
+      <nav>
+        <ul class="nav">
+          <li><a href="eventnearby.html" class="nowpage">events nearby</a></li><!--
+                 --><li><a href="supportcenter.html">support center</a></li><!--
+                 --><li class="drop-down"><a href="signin.html">sign in/register</a>
+                  <!--这里用JS改改-->
+                      <ul class="drop-down-content">
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="favorite.html">My Favorite</a></li>
+                      </ul>
+                  </li>
+        </ul> 
+      </nav>
+    </div>
+  </header>
+
+	<section id="support_center">
+		<h3>SUPPORT CENTER</h3>
+			<form id="supportform" onsubmit="return checkForm()">
+ 				 <fieldset>
+          <legend class="otherform">Report your questions</legend>
+   				 <p>If you have problems with this website or just want to contact us, please submit information below. We will contact you as soon as possible.</p>
+           <p>
+    			  	<label>
+      			 	First name <br>
+      			  	<input type="text" name="firstname" id="firstname">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="firstnameerrormsg">Please enter your first name</p>
+   				<p>
+   				    <label>
+      			 	Last name <br>
+      			  	<input type="text" name="lastname" id="lastname">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="lastnameerrormsg">Please enter your last name</p>
+   				<p>
+      				<label>
+        			Email Adress<br>
+        			<input type="email" name="emailaddr" id="emailaddr">
+      				</label>
+    			</p>
+   				<p class="errormsg" id="emailerrormsg">Please enter your email</p>
+    			<p>
+    				<label>
+      			 	Phone number <br>
+      			  	<input type="text" name="phonenumber" id="phonenumber">
+      				</label>
+   				</p>
+    			<p class="errormsg" id="phonenumbererrormsg">Please enter your phone number</p>
+   				<p>
+     				<label>
+      				Your questions<br>
+       				<textarea name="questions" id="questions"></textarea>
+     				</label>
+    			</p>
+    			<p class="errormsg" id="wordserrormsg">Please enter your questions</p>
+			    </fieldset>
+  				<input type="submit" value="SUBMIT" class="submit_button"> 
+			</form>
+	</section>
+
+    <footer>
+    <div class="col-lg-6">
+      <h5>About our team:</h5>
+      <p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
+    </div><aside class="col-lg-6">
+      <h5>Email us:</h5>
+      <p>4webdesigner@umich.edu</p>
+      <p>&copy; 4webdesigners. All rights reserved</p>            
+    </aside>
+  </footer> 
+
+</body>
+</html>
