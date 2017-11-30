@@ -229,16 +229,18 @@ margin-top: 50px;
 }
 
 /* body contents*/
-.page_title{
+/* body contents*/
+h3{
     text-align: center;
     font-family:MyriadPro-Semibold;
     font-size:30px;
     color:#df574b;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.page_mark{
+h4{
 	text-align: center;
 	font-family:MyriadPro-Semibold;
     font-size:24px;
@@ -259,12 +261,14 @@ img.icon1{
 	float: left;
 }
 
-.event_card{
+.event_postcard{
  	background: white;
     box-shadow:0 1px 0 0 rgba(0,0,0,0.30);
     border-radius:5px;
-    height: 240px; /*use js to make height equals width*/
+    height: 240px; 
+    width: 240px; /*use js to make height equals width*/
     margin: 20px 5px;
+    display: inline-block;
 }
 
 .postcard_body{
@@ -288,7 +292,7 @@ img.icon1{
 	border-bottom: 1px solid #C1C1C1;
 }
 
-.event_title{
+.event_title,.item-name{
 	font-family:MyriadPro-Semibold;
     font-size:16px;
     line-height: 1.3;
@@ -302,15 +306,11 @@ img.icon1{
     color:rgba(86,81,80,0.70);
 }
 
-.card-bottom-container{
-	padding-left:7px;
-}
-
 .event_price{
 	padding:9px;
  	font-size:16px;
     color:#565150;
-    width: 70%;
+    width: 80%;
     float: left;
 }
 .event_action{
@@ -330,7 +330,6 @@ a.seemore{
     color:#565150;
     text-decoration: underline;
 }
-
 /* footer*/
 footer{
 	background-color: #565150;
@@ -576,3 +575,11 @@ h4{
     color:#565150;
 }
 
+.item{
+	background-color: #ffffff;
+}
+
+
+#item-list p{
+	line-height: 0px;
+}

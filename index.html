@@ -28,7 +28,7 @@
 			<nav>
 				<ul class="nav">
 					<li><a href="eventnearby.html" class="nowpage">events nearby</a></li><!--
-                 --><li><a href="supportcenter.html">support center</a></li><!--
+                 --><li><a href="supportcenter.html" >support center</a></li><!--
                  --><li><a href="#" data-toggle="modal" data-target="#loginform">SIGN IN/REGISTER</a></li>
 									 <!--这里用JS改改-->
 									 <li>
@@ -117,7 +117,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary register_bn">Register</button>
-					<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal">Sign In</button>
+					<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
 				</div>
 			</div>
 		</div>
@@ -134,86 +134,32 @@
 			{{location}}
 		    </h4>
 			<div class="search_result">
-		
+<!--11.29 10.54 XW-->
+			<div id="item-list">
 				<div class="col-lg-3">
-						<div class="event_card">
-							<a href="{{result_link}}" class="postcard_body">
-								<div class="postcard_image">
-									<img src="#" alt="result_img" class="search_result_img">
-								</div>
-								<div class="postcard_content">
-									<div class="event_title">{{EventName}}</div>
-									<div class="event_date_location">{{EventDate}}
-										<br>{{Event_Location}}</div>
-								</div>
-							</a>
-							<div class="row card-bottom-container">
-								<div class="event_price col-lg-8">{{EventPrice}}</div>
-								<div class="heart col-lg-4"></div>
-							</div>
-						</div>
-					</div>
-	
-			
-					<div class="col-lg-3">
-							<div class="event_card">
-								<a href="{{result_link}}" class="postcard_body">
-									<div class="postcard_image">
-										<img src="#" alt="result_img" class="search_result_img">
-									</div>
-									<div class="postcard_content">
-										<div class="event_title">{{EventName}}</div>
-										<div class="event_date_location">{{EventDate}}
-											<br>{{Event_Location}}</div>
-									</div>
-								</a>
-								<div class="row card-bottom-container">
-									<div class="event_price col-lg-8">{{EventPrice}}</div>
-									<div class="heart col-lg-4"></div>
-								</div>
-							</div>
-						</div>
-		
-
-						<div class="col-lg-3">
-								<div class="event_card">
-									<a href="{{result_link}}" class="postcard_body">
-										<div class="postcard_image">
-											<img src="#" alt="result_img" class="search_result_img">
-										</div>
-										<div class="postcard_content">
-											<div class="event_title">{{EventName}}</div>
-											<div class="event_date_location">{{EventDate}}
-												<br>{{Event_Location}}</div>
-										</div>
-									</a>
-									<div class="row card-bottom-container">
-										<div class="event_price col-lg-8">{{EventPrice}}</div>
-										<div class="heart col-lg-4"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-									<div class="event_card">
-										<a href="{{result_link}}" class="postcard_body">
-											<div class="postcard_image">
-												<img src="#" alt="result_img" class="search_result_img">
-											</div>
-											<div class="postcard_content">
-												<div class="event_title">{{EventName}}</div>
-												<div class="event_date_location">{{EventDate}}
-													<br>{{Event_Location}}</div>
-											</div>
-										</a>
-										<div class="row card-bottom-container">
-											<div class="event_price col-lg-8">{{EventPrice}}</div>
-											<div class="heart col-lg-4"></div>
-										</div>
-									</div>
-								</div>
-
-									<div class="signin_page">
+			    <div class="event_postcard item">
+			    <a href="{{result_link}}" class="postcard_body">
+			      <div class="postcard_image">
+			      	<img src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" alt="item image" class="search_result_img">
+			      </div>
+				  <div class="postcard_content">
+				  	<div class="event_title"><a class="item-name" href="#">Event</a></div>
+				    <div class="event_date_location">
+				    	<p class="item-category">Music</p>
+				    	<p class="item-address">500 Temple<span>Detroit<span> MI</p></div>
+				  </div>
+				</a>
+				<div class="event_price">{{EventPrice}}</div>
+				<div class="event_action" class="fav-link">
+				<a href="#"><i class="fa fa-heart"></i>
+				<img src="img/heart.png" class="event_heart">
+				</a>
+				</div>
+				</div>
+				</div>
+			</div>
+<!--11.29 10.54 XW-->
+			<div class="signin_page">
 			<div class="page_mark">
 				<img src="img/heart.png" alt="heart" class="icon1"> customized according to your favorites
 			</div>
