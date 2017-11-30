@@ -34,66 +34,71 @@
     </div>
   </header>
 
-	<section id="my_profile">
-		<div class="my-col-1-3">
-			<h2>{{name}}</h2>
-			<img src="img/myself.png" alt="my_avatar_now" id="my_avatar_left">
+  <section id="my_profile">
+    <div class="my-col-1-3">
+      <h2>{{name}}</h2>
+      <img src="img/myself.png" alt="my_avatar_now" id="my_avatar_left">
             <ul>
                 <li><a href="profile.html" class="my_link">My Profile</a></li>
                 <li><a href="favorite.html" class="my_link">My Favorite</a></li>
             </ul>
-		</div><!--
-	--><aside class="my-col-2-3">
-			<form onsubmit="return checkMyForm()" id="myform">
- 				 <fieldset>
-   				 <p>
-    			  	<label class="personal">
-      			 	user name<br>
-      			  	<input type="text" name="username" id="myusername" value="{{name}}">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="myusernameerrormsg">Please enter a valid user name</p>
-      		<p>		
-              <label>
-        			account email<br>
-        			<input type="email" name="accountemailaddr" id="myaccountemailaddr" value="{{accountemail}}">
-      				</label>
-    			</p>
-   				<p class="errormsg" id="myaccountemailerrormsg">Please enter a valid email</p>
-    			<p>
-    				<label>
-      			 	password<br>
-      			  	<input type="password" name="password" id="mypassword" value="{{password}}">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="mypassworderrormsg">Please enter a valid password</p>
-    			<p>
-    				<img src="img/myself.png" alt="my_avatar_change" id="my_avatar_right"><br>
-    				<label>upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
-   				<p>
-    				<label>
-      			 	phone number<br>
-      			  	<input type="text" name="phonenumber" id="myphonenumber" value="{{phonenumber}}">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="myphonenumbererrormsg">Please enter a valid phone number</p>
-			    </fieldset>
-  				<input type="submit" value="SAVE"> 
-			</form>
-		</aside>
-	</section>
+    </div><!--
+  --><aside class="my-col-2-3">
+      <form onsubmit="return checkMyForm()" id="myform">
+         <fieldset>
+           <p>
+            <div class="form-group">
+              <label class="personal" for="myusername">
+              user name<br>
+                <input type="text" class="form-control" name="username" id="myusername" value="{{name}}">
+              </label>
+            </div>
+          </p>
+          <p>
+            <div class="form-group">
+              <label for="myaccountemailaddr">
+              account email<br>
+              <input type="email" class="form-control" name="accountemailaddr" id="myaccountemailaddr" value="{{accountemail}}">
+              </label>
+            </div>
+          </p>
+          <p>
+            <div class="form-group"> 
+                <label for="mypassword">
+                 password<br>
+                <input type="password" class="form-control" name="password" id="mypassword" value="{{password}}">
+              </label>
+            </div>
+          </p>
+          <p>
+            <div class="form-group">
+              <img src="img/myself.png" alt="my_avatar_change" id="my_avatar_right"><br>
+              <label for="myavator">upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
+            </div>
+          <p>
+            <div class="form-group" >
+            <label for="mypassword">
+              phone number<br>
+                <input type="text" class="form-control" name="phonenumber" id="myphonenumber" value="{{phonenumber}}">
+              </label>
+          </p>
+          </fieldset>
+          <button type="submit" class="btn btn-default submit_button">Save</button>
+      </form>
+    </aside>
+  </section>
 
 
     <footer>
-		<div class="col-lg-6">
-			<h5>About our team:</h5>
-			<p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
-		</div><aside class="col-lg-6">
-	 		<h5>Email us:</h5>
-	 		<p>4webdesigner@umich.edu</p>
-	 		<p>&copy; 4webdesigners. All rights reserved</p>						
-		</aside>
-	</footer> 
+    <div class="col-lg-6">
+      <h5>About our team:</h5>
+      <p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
+    </div><aside class="col-lg-6">
+      <h5>Email us:</h5>
+      <p>4webdesigner@umich.edu</p>
+      <p>&copy; 4webdesigners. All rights reserved</p>            
+    </aside>
+  </footer> 
 
 </body>
 </html>

@@ -35,51 +35,56 @@
     </div>
   </header>
 
-	<section id="support_center">
-		<h3>SUPPORT CENTER</h3>
-			<form id="supportform" onsubmit="return checkForm()">
- 				 <fieldset>
+  <section id="support_center">
+    <h3>SUPPORT CENTER</h3>
+      <form id="supportform" onsubmit="return checkForm()">
+         <fieldset>
           <legend class="otherform">Report your questions</legend>
-   				 <p>If you have problems with this website or just want to contact us, please submit information below. We will contact you as soon as possible.</p>
+           <p>If you have problems with this website or just want to contact us, please submit information below. We will contact you as soon as possible.</p>
            <p>
-    			  	<label>
-      			 	First name <br>
-      			  	<input type="text" name="firstname" id="firstname">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="firstnameerrormsg">Please enter your first name</p>
-   				<p>
-   				    <label>
-      			 	Last name <br>
-      			  	<input type="text" name="lastname" id="lastname">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="lastnameerrormsg">Please enter your last name</p>
-   				<p>
-      				<label>
-        			Email Adress<br>
-        			<input type="email" name="emailaddr" id="emailaddr">
-      				</label>
-    			</p>
-   				<p class="errormsg" id="emailerrormsg">Please enter your email</p>
-    			<p>
-    				<label>
-      			 	Phone number <br>
-      			  	<input type="text" name="phonenumber" id="phonenumber">
-      				</label>
-   				</p>
-    			<p class="errormsg" id="phonenumbererrormsg">Please enter your phone number</p>
-   				<p>
-     				<label>
-      				Your questions<br>
-       				<textarea name="questions" id="questions"></textarea>
-     				</label>
-    			</p>
-    			<p class="errormsg" id="wordserrormsg">Please enter your questions</p>
-			    </fieldset>
-  				<input type="submit" value="SUBMIT" class="submit_button"> 
-			</form>
-	</section>
+           <div class="form-group">
+              <label for="firstname">
+              First name <br>
+                <input type="text" class="form-control" name="firstname" id="firstname">
+              </label>
+          </div>
+          </p>
+          <p>
+          <div class="form-group">
+              <label for="lastname">
+              Last name <br>
+                <input type="text" class="form-control" name="lastname" id="lastname">
+              </label>
+          </div>
+          </p>
+          <p>
+            <div class="form-group">
+              <label for="emailaddr">
+              Email Adress<br>
+              <input type="email" class="form-control" name="emailaddr" id="emailaddr">
+              </label>
+            </div>
+          </p>
+          <p>
+            <div class="form-group">
+            <label for="phonenumber">
+              Phone number <br>
+                <input type="text" class="form-control" name="phonenumber" id="phonenumber">
+              </label>
+            </div>
+          </p>
+          <p>
+            <div class="form-group">
+            <label>
+              Your questions<br>
+              <textarea name="questions" class="form-control" id="questions"></textarea>
+            </label>
+          </div>
+          </p>
+            </fieldset>
+          <button type="submit" class="btn btn-default submit_button">Submit</button>
+      </form>
+  </section>
 
     <footer>
     <div class="col-lg-6">
