@@ -3,10 +3,17 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Events Nearby</title>
-	<link rel="stylesheet" href="CSS/main.css">
-	<link rel="stylesheet" href="CSS/bootstrap.css">
-	<link rel="stylesheet" href="CSS/eventPro.css">
+	<title>EventPro</title>
+	<link rel="stylesheet" href="style/main2.css">
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	 crossorigin="anonymous"></script>
+	<script src="scripts/eventPro.js"></script>
+	<link rel="stylesheet" href="style/eventPro.css">
 </head>
 
 <body class="main-container">
@@ -35,105 +42,48 @@
 	</header>
 
 	<section id="events_nearby">
-	    <h3>
-		EVENTS NEAR <span>{{location}}</span>
-		<img src="img/location2.png" alt="location_icon2" class="icon1">
+	<a href="#" id="nearby-btn" class="main-nav-btn">
+		<h3>
+		EVENTS NEARBY
 		</h3>
-		
-        <div class="search_result">
-			    <div class="col-lg-3">
-			    <div class="event_postcard">
-			    <a href="{{result_link}}" class="postcard_body">
-			      <div class="postcard_image">
-			      	<img src="{{EventImage}}" alt="result_img" class="search_result_img">
-			      </div>
-				  <div class="postcard_content">
-				  	<div class="event_title">{{EventName}}</div>
-				    <div class="event_date_location">{{EventDate}}<br>{{Event_Location}}</div>
-				  </div>
-				</a>
-				<div class="event_price">{{EventPrice}}</div>
-				<div class="event_action">
-				<a href="#">
-				<img src="img/heart.png" class="event_heart">
-				</a>
-				</div>
-				</div>
-				</div>
+	</a>
+<div class="search_result">	
+<div id="item-list">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<div id="item-G5vYZfVK3Et5h" class="event_postcard item" data-item_id="G5vYZfVK3Et5h" data-favorite="undefined">
+		<div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div>
+		<div class="postcard_content">
+			<div class="event_title"><a href="http://www.ticketmaster.com/997-now-presents-poptopia-san-jose-california-12-02-2017/event/1C005344D29E92DB" target="_blank" class="item-name">99.7 NOW! Presents POPTOPIA</a></div>
+			<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+		</div>
+		<div class="event_price"><p class="item-category">Music</p></div>
+		<div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div>
+	</div>
+</div>
 
-				<div class="col-lg-3">
-			    <div class="event_postcard">
-			    <a href="{{result_link}}" class="postcard_body">
-			      <div class="postcard_image">
-			      	<img src="{{EventImage}}" alt="result_img" class="search_result_img">
-			      </div>
-				  <div class="postcard_content">
-				  	<div class="event_title">{{EventName}}</div>
-				    <div class="event_date_location">{{EventDate}}<br>{{Event_Location}}</div>
-				  </div>
-				</a>
-				<div class="event_price">{{EventPrice}}</div>
-				<div class="event_action">
-				<a href="#">
-				<img src="img/heart.png" class="event_heart">
-				</a>
-				</div>
-				</div>
-				</div>
 
-				<div class="col-lg-3">
-			    <div class="event_postcard">
-			    <a href="{{result_link}}" class="postcard_body">
-			      <div class="postcard_image">
-			      	<img src="{{EventImage}}" alt="result_img" class="search_result_img">
-			      </div>
-				  <div class="postcard_content">
-				  	<div class="event_title">{{EventName}}</div>
-				    <div class="event_date_location">{{EventDate}}<br>{{Event_Location}}</div>
-				  </div>
-				</a>
-				<div class="event_price">{{EventPrice}}</div>
-				<div class="event_action">
-				<a href="#">
-				<img src="img/heart.png" class="event_heart">
-				</a>
-				</div>
-				</div>
-				</div>
-
-				<div class="col-lg-3">
-			    <div class="event_postcard">
-			    <a href="{{result_link}}" class="postcard_body">
-			      <div class="postcard_image">
-			      	<img src="{{EventImage}}" alt="result_img" class="search_result_img">
-			      </div>
-				  <div class="postcard_content">
-				  	<div class="event_title">{{EventName}}</div>
-				    <div class="event_date_location">{{EventDate}}<br>{{Event_Location}}</div>
-				  </div>
-				</a>
-				<div class="event_price">{{EventPrice}}</div>
-				<div class="event_action">
-				<a href="#">
-				<img src="img/heart.png" class="event_heart">
-				</a>
-				</div>
-				</div>
-				</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfSl2uE4J" class="event_postcard item" data-item_id="G5vYZfSl2uE4J" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/9ef/88a98e97-c639-473d-a888-bcdc249869ef_533891_TABLET_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/wild-949s-jingle-ball-presented-by-san-jose-california-11-30-2017/event/1C00533ACF367566" target="_blank" class="item-name">WiLD 94.9's Jingle Ball presented by Capital One</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfYEZzzOK" class="event_postcard item" data-item_id="G5vYZfYEZzzOK" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/bdd/779fab35-f530-4af4-a6e0-d4197c140bdd_29271_RETINA_PORTRAIT_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/golden-state-warriors-vs-denver-nuggets-oakland-california-12-23-2017/event/1C005309C0E38813" target="_blank" class="item-name">Golden State Warriors vs. Denver Nuggets</a></div><div class="event_date_location"><p class="item-address">7000 Coliseum Way<br>Oakland</p></div></div><div class="event_price"><p class="item-category">Sports</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div>
+</div>
+</div>		
+		<div class="signin_page">
+			<div class="page_mark">
+				Here are some events nearby.
 			</div>
-		
+			<div class="favorite_result">
+			</div>							
+
 	</section>
 
- <footer>
+    <footer>
 		<div class="col-lg-6">
 			<h5>About our team:</h5>
-			<p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
+			<p>Chen Li</br>Mengdie Lin</br>Meng Yuan</br>Wen Xin</p>
 		</div><aside class="col-lg-6">
 	 		<h5>Email us:</h5>
 	 		<p>4webdesigner@umich.edu</p>
 	 		<p>&copy; 4webdesigners. All rights reserved</p>						
 		</aside>
 	</footer> 
-
 </body>
+<script src="scripts/nearby.js"></script>
 </html>
