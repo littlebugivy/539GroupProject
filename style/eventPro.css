@@ -23,7 +23,6 @@ header{
 }
 
 /* navigation*/
-
 .nav-ele{
 	font-size:16px;
 	color: #565150;
@@ -68,8 +67,6 @@ a.title{
 	text-decoration: none;
 }
 
-
-
 a.title:hover{
 	text-decoration: none;
 	color:#df574b;
@@ -105,7 +102,6 @@ h1 a:hover{
 }
 
 h1{
-	
 	display:inline;
 	padding:60px;
 }
@@ -121,7 +117,6 @@ h1{
 	position:absolute;
 	right:0px;
 	top:-60px;
-
 }
 
 .search_bar{
@@ -144,6 +139,7 @@ nav{
 ul{
 list-style: none;
 }
+
 .nav>li{
 float: left;
 background-color: #ffffff;
@@ -182,6 +178,10 @@ margin-top: 50px;
  	display: none;
  /*position: absolute;*/
 }
+
+.page_title{
+	margin-top:50px;
+}
         
 
 
@@ -193,7 +193,6 @@ margin-top: 50px;
 /*banner*/
 .large-banner-container{
 	background-size: 100% 100%;
-	height:512px;
 }
 
 /* search form*/
@@ -202,10 +201,9 @@ margin-top: 50px;
 	background:rgba(255,255,255,0.95);
 	width: 25%;
 	height: 55%;
-	top:150px;
-	bottom:56px;
-	left:50px;
-	padding:20px;
+	top:15%;
+	left:5%;
+	padding:2%;
 	border-radius: 5px;
 	box-shadow:2px 2px 7px 0;
 }
@@ -229,7 +227,6 @@ margin-top: 50px;
 	margin-top:5%;
 }
 
-/* body contents*/
 /* body contents*/
 h3{
     text-align: center;
@@ -269,12 +266,7 @@ img.icon1{
  	background: white;
     box-shadow:0 1px 0 0 rgba(0,0,0,0.30);
     border-radius:5px;
-    height: 240px; /*use js to make height equals width*/
-<<<<<<< HEAD:CSS/eventPro.css
-	margin: 20px 5px;
-=======
     display: inline-block;
->>>>>>> origin/master:style/eventPro.css
 }
 
 .postcard_body{
@@ -320,14 +312,13 @@ p.item-address{
     width: 80%;
     float: left;
 }
+
 .event_action{
 	width: 20%;
 	float: left;
 	padding: 7px;
 }
-.event_heart{
-	width: 70%;
-}
+
 .load{
 	text-align: center;
 	margin: 40px 0 20px 0;
@@ -359,12 +350,12 @@ footer{
 
 /* heart */
 
-.heart {
+.fa-heart {
   position: relative;
   width: 100px;
   height: 100px;
+  margin-right:2%;
   float: right;
-  margin-top:-10%;
   background: url("../img/heart_animate.png") no-repeat;
   background-position: 0 0;
   cursor: pointer;
