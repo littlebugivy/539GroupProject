@@ -107,7 +107,7 @@ h1{
 }
 
 .header_border{
-	border-right:1px solid #565150;
+	border-left:1px solid #565150;
 	display: inline-block;
 	height:60px;
 	line-height:60px;
@@ -331,7 +331,7 @@ a.seemore{
 /* footer*/
 footer{
 	background-color: #565150;
-	height: 200px;
+	overflow: hidden;
 	padding: 40px 100px;
 	font-family:MyriadPro-Semibold;
     font-size:16px;
@@ -371,17 +371,19 @@ footer{
 
 
 /*support center*/
+#support_center{
+	margin:0 auto;
+}
 
 #supportform{
 	background:#ffffff;
-	width:900px;
+	width: 90%;
 	margin:0 auto;
 	margin-bottom: 50px;
 }
 
 legend{
 	background:#df574b;
-	width:900px;
 	height:61px;
 	font-family:MyriadPro-Semibold;
 	font-size:24px;
@@ -397,6 +399,7 @@ legend{
 	color:#565150;
 	text-align:left;
 	padding: 0px 38px 0px;
+	
 }
 
 label{
@@ -405,26 +408,25 @@ label{
 	color:#df574b;
 	text-align:left;
 	text-transform:capitalize;
+	width: 80%;
 }
 
 #supportform input{
 	border:1px solid #979797;
 	border-radius:5px;
-	width:568px;
 	height:38px;
 }
 
 #questions{
 	border:1px solid #979797;
 	border-radius:5px;
-	width:568px;
 	height:276px;
 }
 
 #supportform .submit_button{
 	background:#df574b;
 	border-radius:5px;
-	width:238px;
+	width:200px;
 	height:61px;
 	font-family:MyriadPro-Semibold;
 	font-size:24px;
