@@ -1,7 +1,25 @@
+
+$(function(){
+    var username = sessionStorage.getItem('username');
+    console.log('user name: ' ,username);
+    if(username){  
+        $('.nav_login').hide();
+        $('.user_info').css('display','inline-block');
+        $('.user_info').html(username); 
+    }
+
+    $('.log-out').on('click', function(){
+        var username = sessionStorage.removeItem('username');
+        $('.nav_login').show();
+        $('.drop-down-content').hide();
+        $('.user_info').hide(); 
+    })
+})
+
+
 $('.carousel').carousel({
     interval: 2000
 })
-
 
 $(function () {
     var height = $(".large-banner-container").height();
@@ -26,64 +44,42 @@ $(function () {
     })
 });
 
-var counter = 0;
-var object = [
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    },
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    },
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    },
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    },
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    },
-    {
-        "event_img": "img",
-        "event_name": "event1"
-    }
-]
-
 
 $(document).on('click', '.fa-heart', function () {
     $(this).toggleClass("is-active");
 });
 
-
+var counter = 0; // count how many object has been displayed
+var num_obj  = 18;  // number of json objects
+var limit = 8;
+var num_load = Math.floor((num_obj-4)/limit);
+var num_final_load = num_obj % limit;
+//  load more cards
 $(function () {
-    console.log('see more')
+        $(".seemore").on("click", function () {
+            if(counter<num_load){
+                limit = 8;
+            }else if(counter==num_load){
+                limit = num_final_load;
+            }else{
+                return;
+            }
+    
+            console.log('number_load',num_load, 'counter:',counter, limit)
+            for(var i=0; i<limit; i++) {
+            $(".item-list").append("<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12'><div id='item-G5vYZfSfPYh_1' class='event_postcard item' data-item_id='G5vYZfSfPYh_1' data-favourite='undefined'><div class='postcard_image'><img src='https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg' class='search_result_img' alt='item image'></div><div class='postcard_content'><div class='event_title'><a href='http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A' target='_blank' class='item-name'>Ozuna Odiesa Society Tour</a></div><div class='event_date_location'><p class='item-address'>525 W Santa Clara<br>San Jose</p></div></div><div class='event_price col-8'><p class='item-category'>Music</p></div><div class='event_heart fav-link col-4 fa-heart'></div></div></div>")
 
-    var length = object.length;
-
-    console.log('length: ', length);
-    console.log('counter: ', counter);
-
-    if (length > 4) {
-        var i = 0;
-        while (i < 4) {
-            $(".seemore").on("click", function () {
-                $(".item-list").append("<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12'><div id='item-G5vYZfSfPYh_1' class='event_postcard item' data-item_id='G5vYZfSfPYh_1' data-favorite='undefined'><div class='postcard_image'><img src='https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg' class='search_result_img' alt='item image'></div><div class='postcard_content'><div class='event_title'><a href='http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A' target='_blank' class='item-name'>Ozuna Odiesa Society Tour</a></div><div class='event_date_location'><p class='item-address'>525 W Santa Clara<br>San Jose</p></div></div><div class='event_price col-8'><p class='item-category'>Music</p></div><div class='event_heart fav-link col-4 fa-heart'></div></div></div>")
-
-                var card_height = $('.event_postcard').height();
-                var ratio = -1 * card_height / 240 * 90;
-                var heart_height = card_height * 90 / 240;
-                $('.fa-heart').height(heart_height + 'px');
-                $('.fa-heart').width(heart_height + 'px');
-                $('.fa-heart').css("margin-top", ratio + "px")
-            });
-            i++;
-        }
-    }
+            var card_height = $('.event_postcard').height();
+            var ratio = -1 * card_height / 240 * 90;
+            var heart_height = card_height * 90 / 240;
+            $('.fa-heart').height(heart_height + 'px');
+            $('.fa-heart').width(heart_height + 'px');
+            $('.fa-heart').css("margin-top", ratio + "px")
+            }
+            counter++;
+            console.log('number of load:',counter)
+        });
+       
 })
 
 $(function () {
@@ -98,11 +94,28 @@ $(function () {
         }
         else {
             $(".modal-title").html("Sign In");
-            $(".confirmpw").remove()
-            $(".forgetpw").show()
+            $(".confirmpw").remove();
+            $(".forgetpw").show();
             $(".register_bn").html("Register")
             $(".submit_bn").html("Sign In")
         }
+    })
+
+    // login get user name
+    $('.newuser').on('click', function(){
+
+        // TODO: js validation needed - password
+        var username = $('#username').val();  
+        sessionStorage.setItem('username', username);    
+        $('.nav_login').hide();
+        $('.user_info').css('display','inline-block');
+        $('.user_info').html(username);     
+    })
+
+    $('.user_info').on('click',function(){
+        var width = $('.user_info').width();
+        $('.drop-down-content').width(width+81); // padding
+        $('.drop-down-content').css('display','block')
     })
 })
 

@@ -14,7 +14,7 @@
 		// Register event listeners
 		$('recommend-btn').addEventListener('click', loadRecommendedItems);
 		$('nearby-btn').addEventListener('click', loadNearbyItems);
-		$('fav-btn').addEventListener('click', loadFavoriteItems);
+		$('fav-btn').addEventListener('click', loadfavouriteItems);
 		
 		initGeoLocation();
 	}
@@ -207,10 +207,10 @@
 	}
 
 	/**
-	 * API #2 Load favorite (or visited) items API end point: [GET]
+	 * API #2 Load favourite (or visited) items API end point: [GET]
 	 * /Titan/history?user_id=1111
 	 */
-	function loadFavoriteItems() {
+	function loadfavouriteItems() {
 		activeBtn('fav-btn');
 
 		// The request parameters
@@ -219,18 +219,18 @@
 		var req = JSON.stringify({});
 
 		// display loading message
-		showLoadingMessage('Loading favorite items...');
+		showLoadingMessage('Loading favourite items...');
 
 		// make AJAX call
 		ajax('GET', url + '?' + params, req, function(res) {
 			var items = JSON.parse(res);
 			if (!items || items.length === 0) {
-				showWarningMessage('No favorite item.');
+				showWarningMessage('No favourite item.');
 			} else {
 				listItems(items);
 			}
 		}, function() {
-			showErrorMessage('Cannot load favorite items.');
+			showErrorMessage('Cannot load favourite items.');
 		});
 	}
 
@@ -259,7 +259,7 @@
 				function(res) {
 					var items = JSON.parse(res);
 					if (!items || items.length === 0) {
-						showWarningMessage('No recommended item. Make sure you have favorites.');
+						showWarningMessage('No recommended item. Make sure you have favourites.');
 					} else {
 						listItems(items);
 					}
@@ -271,7 +271,7 @@
 	}
 
 	/**
-	 * API #4 Toggle favorite (or visited) items
+	 * API #4 Toggle favourite (or visited) items
 	 * 
 	 * @param item_id -
 	 *            The item business id
@@ -279,27 +279,27 @@
 	 * API end point: [POST]/[DELETE] /Dashi/history request json data: {
 	 * user_id: 1111, visited: [a_list_of_business_ids] }
 	 */
-	function changeFavoriteItem(item_id) {
+	function changefavouriteItem(item_id) {
 		// Check whether this item has been visited or not
 		var li = $('item-' + item_id);
 		var favIcon = $('fav-icon-' + item_id);
-		var favorite = li.dataset.favorite !== 'true';
+		var favourite = li.dataset.favourite !== 'true';
 
 		// The request parameters
 		var url = './history';
 		var req = JSON.stringify({
 			user_id : user_id,
-			favorite : [ item_id ]
+			favourite : [ item_id ]
 		});
-		var method = favorite ? 'POST' : 'DELETE';
+		var method = favourite ? 'POST' : 'DELETE';
 
 		ajax(method, url, req,
 		// successful callback
 		function(res) {
 			var result = JSON.parse(res);
 			if (result.result === 'SUCCESS') {
-				li.dataset.favorite = favorite;
-				favIcon.className = favorite ? 'fa fa-heart' : 'fa fa-heart-o';
+				li.dataset.favourite = favourite;
+				favIcon.className = favourite ? 'fa fa-heart' : 'fa fa-heart-o';
 			}
 		});
 	}
@@ -351,7 +351,7 @@
 
 		// set the data attribute
 		postitem.dataset.item_id = item_id;
-		postitem.dataset.favorite = item.favorite;
+		postitem.dataset.favourite = item.favourite;
 
 
 		//<div class="postcard_image">

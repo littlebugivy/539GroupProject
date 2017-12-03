@@ -34,11 +34,18 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="eventnearby.html" target="_blank">events nearby</a>
-    <a href="supportcenter.html" target="_blank">support center</a>
-    <a href="#" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
-  </div>
- </div>
+		<a href="eventnearby.html" target="_blank">events nearby</a>
+		<a href="supportcenter.html" target="_blank">support center</a>
+		<a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+		<a href="#" class="user_info"  arget="_blank"></a>
+		<div class="drop-down-content">
+			<ul>
+					<li><a href="profile.html">My Profile</a></li>
+					<li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
+					<li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
+				</ul>
+		</div>
+	  </div>
 </header>
 
 		<!-- Modal login/register box-->
@@ -56,7 +63,7 @@
 							<div class="form-group">
 								<label for="username" class="control-label">Username</label>
 								<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-								placeholder="example@gmail.com">
+								placeholder="username or email">
 								<span class="help-block"></span>
 							</div>
 							<div class="form-group">
@@ -68,9 +75,9 @@
 						<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary register_bn">Register</button>
-						<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
-					</div>
+							<button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+							<button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+						  </div>
 				</div>
 			</div>
 		</div>
@@ -91,7 +98,7 @@
 					<div class="page page1 page-active">
 				<!-- one card example - Mengdie -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favourite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -109,7 +116,7 @@
 				<div class="page page2">
 				<!-- one card example - Mengdie -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favourite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -126,7 +133,7 @@
 				<div class="page page3">
 					<!-- one card example - Mengdie -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favourite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -144,7 +151,7 @@
 				<div class="page page4">
 				<!-- one card example - Mengdie -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favourite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>

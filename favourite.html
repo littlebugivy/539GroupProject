@@ -13,7 +13,7 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	 crossorigin="anonymous"></script>
-	<script src="scripts/eventPro.js"></script>
+	<script src="script/eventPro.js"></script>
 	<link rel="stylesheet" href="style/eventPro.css">
 </head>
 
@@ -35,12 +35,19 @@
     
   </div>
   <input type="checkbox" id="nav-check">
-  <div class="nav-links">
-    <a href="eventnearby.html" target="_blank">events nearby</a>
-    <a href="supportcenter.html" target="_blank">support center</a>
-    <a href="#" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
-  </div>
- </div>
+	<div class="nav-links">
+			<a href="eventnearby.html" target="_blank">events nearby</a>
+			<a href="supportcenter.html" target="_blank">support center</a>
+		<a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+		<a href="#" class="user_info"  arget="_blank"></a>
+		<div class="drop-down-content">
+			<ul>
+					<li><a href="profile.html">My Profile</a></li>
+					<li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
+					<li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
+				</ul>
+		</div>
+		</div>
 </header>
 
 
@@ -60,7 +67,7 @@
 							<div class="form-group">
 								<label for="username" class="control-label">Username</label>
 								<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-								placeholder="example@gmail.com">
+								placeholder="username or email">
 								<span class="help-block"></span>
 							</div>
 							<div class="form-group">
@@ -72,36 +79,45 @@
 						<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary register_bn">Register</button>
-						<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
-					</div>
+							<button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+							<button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+						</div>
 				</div>
 			</div>
 		</div>
-	
->>>>>>> 058b3050ad87aefc00769b02895431092f9c7251
 
-	<section id="my_favorite">
+	<section id="my_favourite">
 		<div class="my-col-1-3">
 			<h2 id = "userName">{{name}}</h2>
 			<img src="img/myself.png" alt="my_avatar_now" id="my_avatar_left">
             <ul>
                 <li><a href="profile.html" class="my_link">My Profile</a></li>
-                <li><a href="favorite.html" class="my_link main-nav-btn" id="fav-btn">My Favorite</a></li>
+                <li><a href="favourite.html" class="my_link main-nav-btn" id="fav-btn">My favourite</a></li>
             </ul>
 		</div><!--
 	--><aside class="my-col-2-3">
 
 <!--11.29 10.54 XW-->
 <div id="item-list">
-<div class="col-lg-3"><div id="item-G5vYZfVK3Et5h" class="event_postcard item" data-item_id="G5vYZfVK3Et5h" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/997-now-presents-poptopia-san-jose-california-12-02-2017/event/1C005344D29E92DB" target="_blank" class="item-name">99.7 NOW! Presents POPTOPIA</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3"><div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/862/b256b95f-824b-4fe2-b3d6-b10ce9ca4862_393611_EVENT_DETAIL_PAGE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3"><div id="item-G5vYZfSl2uE4J" class="event_postcard item" data-item_id="G5vYZfSl2uE4J" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/9ef/88a98e97-c639-473d-a888-bcdc249869ef_533891_TABLET_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/wild-949s-jingle-ball-presented-by-san-jose-california-11-30-2017/event/1C00533ACF367566" target="_blank" class="item-name">WiLD 94.9's Jingle Ball presented by Capital One</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3"><div id="item-G5vYZfYEZzzOK" class="event_postcard item" data-item_id="G5vYZfYEZzzOK" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/bdd/779fab35-f530-4af4-a6e0-d4197c140bdd_29271_RETINA_PORTRAIT_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/golden-state-warriors-vs-denver-nuggets-oakland-california-12-23-2017/event/1C005309C0E38813" target="_blank" class="item-name">Golden State Warriors vs. Denver Nuggets</a></div><div class="event_date_location"><p class="item-address">7000 Coliseum Way<br>Oakland</p></div></div><div class="event_price"><p class="item-category">Sports</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div>
+		<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favourite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Music</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
 </div>
 <!--11.29 10.54 XW-->
 
-
-		</aside>
+	</aside>
 	</section>
-
 
     <footer>
 		<div class="col-lg-6">
@@ -113,6 +129,6 @@
 	 		<p>&copy; 4webdesigners. All rights reserved</p>						
 		</aside>
 	</footer> 
-<script src="scripts/favourite.js"></script>
+<script src="script/favourite.js"></script>
 </body>
 </html>

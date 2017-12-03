@@ -19,34 +19,6 @@
 
 <body class="main-container">
 
-<!-- header -->
-<!--
-	<header>
-		<div class="header_border">
-		<h1><a href="index.html" id="header_eventpro">EventPro</a></h1>
-
-		<div class="primary-nav header_border">
-			<nav>
-				<ul class="nav">
-
-					<li><a href="eventnearby.html" class="nowpage">events nearby</a></li>
-					<li><a href="supportcenter.html" >support center</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#loginform">SIGN IN/REGISTER</a></li>
-									
-
-								
-									 <li>
-                 	    <ul class="drop-down-content">
-                 	    	<li><a href="profile.html">My Profile</a></li>
-                 	    	<li><a href="favorite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
-                 	    </ul>
-                 	</li>
-				</ul>	
-			</nav>
-		</div>
-	</header>
--->
-
 <header>
 <div>
   <div class="nav-header">
@@ -65,7 +37,15 @@
   <div class="nav-links">
     <a href="eventnearby.html" target="_blank">events nearby</a>
     <a href="supportcenter.html" target="_blank">support center</a>
-    <a href="#" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+	<a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+	<a href="#" class="user_info"  arget="_blank"></a>
+	<div class="drop-down-content">
+		<ul>
+				<li><a href="profile.html">My Profile</a></li>
+				<li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
+				<li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
+			</ul>
+	</div>
   </div>
  </div>
 </header>
@@ -132,7 +112,7 @@
 						<div class="form-group">
 							<label for="username" class="control-label">Username</label>
 							<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-							placeholder="example@gmail.com">
+							placeholder="email or username">
 							<span class="help-block"></span>
 						</div>
 						<div class="form-group">
@@ -144,8 +124,8 @@
 					<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary register_bn">Register</button>
-					<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
+					<button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+					<button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
 				</div>
 			</div>
 		</div>

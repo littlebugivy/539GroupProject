@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventPro</title>
-  <link rel="stylesheet" href="style/main2.css">
+  <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/bootstrap.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
    crossorigin="anonymous"></script>
@@ -13,13 +13,12 @@
    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
    crossorigin="anonymous"></script>
-  <script src="scripts/eventPro.js"></script>
+  <script src="script/eventPro.js"></script>
   <link rel="stylesheet" href="style/eventPro.css">
 </head>
 
 <body class="main-container">
   
-
 <header>
 <div>
   <div class="nav-header">
@@ -36,10 +35,17 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="eventnearby.html" target="_blank">events nearby</a>
-    <a href="supportcenter.html" target="_blank">support center</a>
-    <a href="#" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
-  </div>
+      <a href="eventnearby.html" target="_blank">events nearby</a>
+      <a href="supportcenter.html" target="_blank">support center</a>
+    <a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+    <a href="#" class="user_info"  arget="_blank">sign in/ register</a>
+    <div class="drop-down-content">
+        <ul>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
+            <li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
+          </ul>
+      </div>
  </div>
 </header>
 
@@ -58,7 +64,7 @@
 						<div class="form-group">
 							<label for="username" class="control-label">Username</label>
 							<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-							placeholder="example@gmail.com">
+							placeholder="username or email">
 							<span class="help-block"></span>
 						</div>
 						<div class="form-group">
@@ -69,10 +75,10 @@
 					</form>
 					<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary register_bn">Register</button>
-					<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
-				</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+            <button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+          </div>
 			</div>
 		</div>
 	</div>
