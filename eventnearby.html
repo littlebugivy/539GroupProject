@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EventPro</title>
-	<link rel="stylesheet" href="style/main2.css">
+	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/bootstrap.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
@@ -12,7 +13,6 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	 crossorigin="anonymous"></script>
-	<script src="scripts/eventPro.js"></script>
 	<link rel="stylesheet" href="style/eventPro.css">
 </head>
 
@@ -82,77 +82,97 @@
 		EVENTS NEARBY
 		</h3>
 	</a>
-<div class="search_result">	
-<div id="item-list">
 
-	<!-- one card example - Mengdie -->
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
-						<div class="postcard_image">
-							<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
-						</div>
-						<div class="postcard_content">
-							<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
-							<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
-						</div>
-						<div class="event_price col-8"><p class="item-category">Music</p></div>
-					<div class="event_heart fav-link col-4 fa-heart"></div>
-				</div>
-			</div>
+	
+	<div class="search_result">
+			<div id="item-list" class="item-list">
 
+				<div class="pages">
+					<div class="page page1 page-active">
 				<!-- one card example - Mengdie -->
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-			<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
-				<div class="postcard_image">
-					<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
-				</div>
-				<div class="postcard_content">
-					<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
-					<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
-				</div>
-				<div class="event_price col-8"><p class="item-category">Music</p></div>
-			<div class="event_heart fav-link col-4 fa-heart"></div>
-		</div>
-	</div>
-		<!-- one card example - Mengdie -->
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
-					<div class="postcard_image">
-						<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page1</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
 					</div>
-					<div class="postcard_content">
-						<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
-						<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+				</div>
+
+				</div>
+
+				<div class="page page2">
+				<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page2</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
 					</div>
-					<div class="event_price col-8"><p class="item-category">Music</p></div>
-				<div class="event_heart fav-link col-4 fa-heart"></div>
+				</div>
+				</div>
+				
+				<div class="page page3">
+					<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page3</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+
+				</div>
+
+				<div class="page page4">
+				<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page4</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+				</div>
+				</div>
+
 			</div>
 		</div>
-			<!-- one card example - Mengdie -->
-	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-			<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
-				<div class="postcard_image">
-					<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
-				</div>
-				<div class="postcard_content">
-					<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
-					<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
-				</div>
-				<div class="event_price col-8"><p class="item-category">Music</p></div>
-			<div class="event_heart fav-link col-4 fa-heart"></div>
-		</div>
-	</div>
 
-
-</div>
-</div>		
-		<div class="signin_page">
-			<div class="page_mark">
-				Here are some events nearby.
+	                
+		<div class="pagination-container">
+			<div class="pagination">
+				<a class="pag_prev" href="#">&laquo;</a>
+				<a class="active pn1 pag" href="#">1</a>
+				<a class="pn2 pag" href="#">2</a>
+				<a class="pn3 pag" href="#">3</a>
+				<a class="pn4 pag" href="#">4</a>
+				<a class="pag_next" href="#">&raquo;</a>
 			</div>
-			<div class="favorite_result">
-			</div>							
-
+		</div>
 	</section>
 
     <footer>
@@ -166,5 +186,6 @@
 		</aside>
 	</footer> 
 </body>
-<script src="scripts/nearby.js"></script>
+<!-- <script src="script/nearby.js"></script> -->
+<script src="script/eventPro.js"></script>
 </html>
