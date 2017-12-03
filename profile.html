@@ -89,15 +89,15 @@
 
 
   <section id="my_profile">
-    <div class="my-col-1-3">
+    <div class="col-lg-3 col-sm-12">
       <h2>{{name}}</h2>
-      <img src="img/myself.png" alt="my_avatar_now" id="my_avatar_left">
+      <img src="img/avatar.png" alt="my_avatar_now" id="my_avatar_left">
             <ul>
-                <li><a href="profile.html" class="my_link">My Profile</a></li>
-                <li><a href="favourite.html" class="my_link">My favourite</a></li>
+                <li><a href="profile.html" class="my_link chosen">My Profile</a></li>
+                <li><a href="favourite.html" class="my_link">My Favorite</a></li>
             </ul>
     </div><!--
-  --><aside class="my-col-2-3">
+  --><aside class="col-lg-9 col-sm-12">
       <form onsubmit="return checkMyForm()" id="myform">
          <fieldset>
            <p>
@@ -126,7 +126,7 @@
           </p>
           <p>
             <div class="form-group">
-              <img src="img/myself.png" alt="my_avatar_change" id="my_avatar_right"><br>
+              <img src="img/avatar.png" alt="my_avatar_change" id="my_avatar_right"><br>
               <label for="myavator">upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
             </div>
           <p>

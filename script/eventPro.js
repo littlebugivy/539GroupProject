@@ -23,17 +23,17 @@ $('.carousel').carousel({
 
 $(function () {
     var height = $(".large-banner-container").height();
-    $('.search-form').height(height / 1.4)
-    $('.search-form').css("top", height * 0.2)
-    $('.search-form').css("bottom", height * 0.2)
+   /* $('.search-form').height(height / 1.4)
+    *$('.search-form').css("top", height * 0.2)
+    $('.search-form').css("bottom", height * 0.2)*/
     $('.event_postcard').height(240);
     $('.fa-heart').css('margin-top', '-90px');
 
     $(window).resize(function () {
         var newheight = $(".large-banner-container").height();
-        $('.search-form').height(newheight / 1.4);
+        /*$('.search-form').height(newheight / 1.4);
         $('.search-form').css("top", newheight * 0.2)
-        $('.search-form').css("bottom", newheight * 0.2)
+        $('.search-form').css("bottom", newheight * 0.2)*/
         $('.event_postcard').height($('.event_postcard').width())
         var card_height = $('.event_postcard').height();
         var ratio = -1 * card_height / 240 * 90;
@@ -41,6 +41,12 @@ $(function () {
         $('.fa-heart').height(heart_height + 'px');
         $('.fa-heart').width(heart_height + 'px');
         $('.fa-heart').css("margin-top", ratio + "px")
+        var window_width = $('body').width();
+        console.log(window_width);
+           if(window_width < 1000){
+            var margin_bottom = 450 - window_width * 0.4;
+            $('.large-banner-container').css("margin-bottom", margin_bottom + 'px');
+        }
     })
 });
 
