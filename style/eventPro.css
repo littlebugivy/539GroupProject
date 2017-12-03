@@ -143,22 +143,35 @@ header{
 .large-banner-container form.search-form{
 	position: absolute;
 	background:rgba(255,255,255,0.95);
-	width: 25%;
-	height: 55%;
-	top:15%;
+	width: 320px;
+	height:310px;
+	top:25%;
 	left:5%;
-	padding:2%;
+	padding:1%;
 	border-radius: 5px;
 	box-shadow:2px 2px 7px 0;
 	z-index: 0;
 }
 
+@media (max-width:1000px){
+	.large-banner-container form.search-form{
+	position: absolute;
+	margin-left: -160px;
+	box-shadow:1px 1px 1px 0;
+	left: 50%;
+	top: 25%;
+}
+    .large-banner-container{
+    	margin-bottom: 200px;
+    }
+}
 
 .search-title{
 	color:#df574b;
-	font-size: 30px;
+	font-size: 24px;
 	width: 100%;
 	text-align: center;
+	margin-top: 10px;
 }
 
 .search-form .form-group{
@@ -330,7 +343,7 @@ footer{
 	margin-bottom: 50px;
 }
 
-legend{
+#supportform legend{
 	background:#df574b;
 	height:61px;
 	font-family:MyriadPro-Semibold;
@@ -338,7 +351,8 @@ legend{
 	color:#ffffff;
 	text-align:left;
 	text-transform:uppercase;
-	padding: 18px 38px 18px;
+	padding: 18px 30px;
+	border-radius: 5px 5px 0 0;
 }
 
 #supportform p,.form-group{
@@ -346,11 +360,11 @@ legend{
 	font-size:16px;
 	color:#565150;
 	text-align:left;
-	padding: 0px 38px 0px;
+	padding: 0px 24px;
 	
 }
 
-label{
+#supportform label{
 	font-family:MyriadPro-Regular;
 	font-size:16px;
 	color:#df574b;
