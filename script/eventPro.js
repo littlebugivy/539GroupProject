@@ -23,6 +23,12 @@ $(function () {
         $('.fa-heart').height(heart_height + 'px');
         $('.fa-heart').width(heart_height + 'px');
         $('.fa-heart').css("margin-top", ratio + "px")
+        var window_width = $('body').width();
+        console.log(window_width);
+           if(window_width < 1000){
+            var margin_bottom = 450 - window_width * 0.4;
+            $('.large-banner-container').css("margin-bottom", margin_bottom + 'px');
+        }
     })
 });
 
