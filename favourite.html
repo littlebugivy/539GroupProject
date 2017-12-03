@@ -7,18 +7,17 @@
 	<title>EventPro</title>
 	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/bootstrap.css">
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	 crossorigin="anonymous"></script>
-	<script src="script/eventPro.js"></script>
 	<link rel="stylesheet" href="style/eventPro.css">
 </head>
 
 <body class="main-container">
-
 
 <header>
 <div>
@@ -29,62 +28,61 @@
   </div>
   <div class="nav-btn">
  <label for="nav-check">
-     <img for="nav-check" src="img/menu.png" alt="menu_icon" class="menu_icon">
+     <img src="img/menu.png" alt="menu_icon" class="menu_icon">
 </label>
 
     
   </div>
   <input type="checkbox" id="nav-check">
-	<div class="nav-links">
-			<a href="eventnearby.html" target="_blank">events nearby</a>
-			<a href="supportcenter.html" target="_blank">support center</a>
-		<a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
-		<a href="#" class="user_info"  arget="_blank"></a>
-		<div class="drop-down-content">
-			<ul>
-					<li><a href="profile.html">My Profile</a></li>
-					<li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
-					<li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
-				</ul>
-		</div>
-		</div>
+  <div class="nav-links">
+    <a href="eventnearby.html" target="_blank">events nearby</a>
+    <a href="supportcenter.html" target="_blank">support center</a>
+	<a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" target="_blank">sign in/ register</a>
+	<a href="#" class="user_info"  target="_blank">username</a>
+	<div class="drop-down-content">
+		<ul>
+				<li><a href="profile.html">My Profile</a></li>
+				<li><a href="favourite.html" class="main-nav-btn">My Favorite</a></li>
+				<li><a href="#" class="main-nav-btn log-out">Log Out</a></li>
+			</ul>
+	</div>
+  </div>
+ </div>
 </header>
 
-
-	
-		<!-- Modal login/register box - Mengdie -->
-		<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-labelledby="login/register page" aria-hidden="true" keyboard="false"  backdrop="static">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Log In</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body" id="login-form">
-						<form id="login" method="#" action="#">
-							<div class="form-group">
-								<label for="username" class="control-label">Username</label>
-								<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-								placeholder="username or email">
-								<span class="help-block"></span>
-							</div>
-							<div class="form-group">
-								<label for="password" class="control-label">Password</label>
-								<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-								<span class="help-block"></span>
-							</div>
-						</form>
-						<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
-					</div>
-					<div class="modal-footer">
-							<button type="button" class="btn btn-secondary register_bn newuser">Register</button>
-							<button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+	<!-- Modal login/register box - Mengdie-->
+	<div class="modal fade" id="loginform" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Log In</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" id="login-form">
+					<form id="login" action="#">
+						<div class="form-group">
+							<label for="username" class="control-label">Username</label>
+							<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
+							placeholder="email or username">
+							<div class="help-block"></div>
 						</div>
+						<div class="form-group">
+							<label for="password" class="control-label">Password</label>
+							<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+							<div class="help-block"></div>
+						</div>
+					</form>
+					<div class="forgetpw"><a href="#">Forget Password?</a></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+					<button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
 				</div>
 			</div>
 		</div>
+	</div>
 	
 <section id="my_favorite">
 <div>
@@ -116,7 +114,7 @@
 				</div>
 				<!-- one card example - Mengdie -->
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_2" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -130,7 +128,7 @@
 				</div>
 					<!-- one card example - Mengdie -->
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_3" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -144,7 +142,7 @@
 				</div>
 				<!-- one card example - Mengdie -->
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+						<div id="item-G5vYZfSfPYh_4" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
 							<div class="postcard_image">
 								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
 							</div>
@@ -162,20 +160,17 @@
 <!--11.29 10.54 XW-->
 
 
-		</aside>
-	</div>
-	</section>
-
     <footer>
 		<div class="col-lg-6">
 			<h5>About our team:</h5>
-			<p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
+			<p>Li Cheng<br>Lin Mengdie<br>Meng Yuan<br>Wen Xin</p>
 		</div><aside class="col-lg-6">
 	 		<h5>Email us:</h5>
 	 		<p>4webdesigner@umich.edu</p>
 	 		<p>&copy; 4webdesigners. All rights reserved</p>						
 		</aside>
 	</footer> 
-<script src="script/favourite.js"></script>
+	<script src="script/eventPro.js"></script>
+	<script src="script/favourite.js"></script>
 </body>
 </html>

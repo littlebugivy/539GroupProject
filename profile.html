@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventPro</title>
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/bootstrap.css">
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
    crossorigin="anonymous"></script>
-  <script src="script/eventPro.js"></script>
   <link rel="stylesheet" href="style/eventPro.css">
 </head>
 
-
 <body class="main-container">
+
 <header>
 <div>
   <div class="nav-header">
@@ -32,60 +28,61 @@
   </div>
   <div class="nav-btn">
  <label for="nav-check">
-     <img for="nav-check" src="img/menu.png" alt="menu_icon" class="menu_icon">
+     <img src="img/menu.png" alt="menu_icon" class="menu_icon">
 </label>
 
     
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-      <a href="eventnearby.html" target="_blank">events nearby</a>
-      <a href="supportcenter.html" target="_blank">support center</a>
-    <a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
-    <a href="#" class="user_info"  arget="_blank"></a>
-    <div class="drop-down-content">
-      <ul>
-          <li><a href="profile.html">My Profile</a></li>
-          <li><a href="favourite.html" id="item-nav fav-btn" class="main-nav-btn">My Favorite</a></li>
-          <li><a href="#" id="item-nav fav-btn" class="main-nav-btn log-out">Log Out</a></li>
-        </ul>
-    </div>
-    </div>
+    <a href="eventnearby.html" target="_blank">events nearby</a>
+    <a href="supportcenter.html" target="_blank">support center</a>
+  <a href="#" class="nav_login" data-toggle="modal" data-target="#loginform" target="_blank">sign in/ register</a>
+  <a href="#" class="user_info"  target="_blank">username</a>
+  <div class="drop-down-content">
+    <ul>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="favourite.html" class="main-nav-btn">My Favorite</a></li>
+        <li><a href="#" class="main-nav-btn log-out">Log Out</a></li>
+      </ul>
+  </div>
+  </div>
+ </div>
 </header>
 
-  	<!-- Modal login/register box - Mengdie -->
-	<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-labelledby="login/register page" aria-hidden="true" keyboard="false"  backdrop="static">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Log In</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body" id="login-form">
-					<form id="login" method="#" action="#">
-						<div class="form-group">
-							<label for="username" class="control-label">Username</label>
-							<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
-							placeholder="username or email">
-							<span class="help-block"></span>
-						</div>
-						<div class="form-group">
-							<label for="password" class="control-label">Password</label>
-							<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-							<span class="help-block"></span>
-						</div>
-					</form>
-					<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
-				</div>
+  <!-- Modal login/register box - Mengdie-->
+  <div class="modal fade" id="loginform" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="login-form">
+          <form id="login" action="#">
+            <div class="form-group">
+              <label for="username" class="control-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
+              placeholder="email or username">
+              <div class="help-block"></div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+              <div class="help-block"></div>
+            </div>
+          </form>
+          <div class="forgetpw"><a href="#">Forget Password?</a></div>
+        </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary register_bn newuser">Register</button>
-            <button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
-          </div> 
-			</div>
-		</div>
-	</div>
+          <button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+          <button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <section id="my_profile">
@@ -100,42 +97,34 @@
   --><aside class="col-lg-9 col-sm-12">
       <form onsubmit="return checkMyForm()" id="myform">
          <fieldset>
-           <p>
             <div class="form-group">
               <label class="personal" for="myusername">
               user name<br>
                 <input type="text" class="form-control" name="username" id="myusername" value="{{name}}">
               </label>
             </div>
-          </p>
-          <p>
             <div class="form-group">
               <label for="myaccountemailaddr">
               account email<br>
               <input type="email" class="form-control" name="accountemailaddr" id="myaccountemailaddr" value="{{accountemail}}">
               </label>
             </div>
-          </p>
-          <p>
             <div class="form-group"> 
                 <label for="mypassword">
                  password<br>
                 <input type="password" class="form-control" name="password" id="mypassword" value="{{password}}">
               </label>
             </div>
-          </p>
-          <p>
             <div class="form-group">
               <img src="img/avatar.png" alt="my_avatar_change" id="my_avatar_right"><br>
               <label for="myavator">upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
             </div>
-          <p>
             <div class="form-group" >
-            <label for="mypassword">
+            <label for="myphonenumber">
               phone number<br>
                 <input type="text" class="form-control" name="phonenumber" id="myphonenumber" value="{{phonenumber}}">
               </label>
-          </p>
+            </div>           
           </fieldset>
           <button type="submit" class="btn btn-default submit_button">Save</button>
       </form>
@@ -143,16 +132,18 @@
   </section>
 
 
+<!-- footer -->
+
     <footer>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
       <h5>About our team:</h5>
-      <p>Li Cheng</br>Lin Mengdie</br>Meng Yuan</br>Wen Xin</p>
-    </div><aside class="col-lg-6">
+      <p>Chen Li<br>Mengdie Lin<br>Meng Yuan<br>Wen Xin<p>
+    </div><aside class="col-lg-6 col-sm-12">
       <h5>Email us:</h5>
       <p>4webdesigner@umich.edu</p>
       <p>&copy; 4webdesigners. All rights reserved</p>            
     </aside>
   </footer> 
-
 </body>
+
 </html>
