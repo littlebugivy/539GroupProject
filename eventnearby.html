@@ -17,29 +17,29 @@
 </head>
 
 <body class="main-container">
-	<header>
-		<div class="header_border">
-		<h1><a href="index.html" id="header_eventpro">EventPro</a></h1>
-		</div>		
-		<div class="header_border header_search_bar">
-		<input type="text" class="search_bar" placeholder="search something">
-		</div>
-		<div class="primary-nav header_border">
-			<nav>
-				<ul class="nav">
-					<li><a href="eventnearby.html" class="nowpage">events nearby</a></li><!--
-                 --><li><a href="supportcenter.html">support center</a></li><!--
-                 --><li class="drop-down"><a href="signin.html">sign in/register</a>
-                 	<!--这里用JS改改-->
-                 	    <ul class="drop-down-content">
-                 	    	<li><a href="profile.html">My Profile</a></li>
-                 	    	<li><a href="favorite.html">My Favorite</a></li>
-                 	    </ul>
-                 	</li>
-				</ul>	
-			</nav>
-		</div>
-	</header>
+
+<header>
+<div>
+  <div class="nav-header">
+    <h1><a href="index.html" class="nav-title">
+      EventPro
+    </a></h1>
+  </div>
+  <div class="nav-btn">
+ <label for="nav-check">
+     <img for="nav-check" src="img/menu.png" alt="menu_icon" class="menu_icon">
+</label>
+
+    
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="eventnearby.html" target="_blank">events nearby</a>
+    <a href="supportcenter.html" target="_blank">support center</a>
+    <a href="#" data-toggle="modal" data-target="#loginform" arget="_blank">sign in/ register</a>
+  </div>
+ </div>
+</header>
 
 	<section id="events_nearby">
 	<a href="#" id="nearby-btn" class="main-nav-btn">
