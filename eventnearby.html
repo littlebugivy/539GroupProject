@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EventPro</title>
-	<link rel="stylesheet" href="style/main2.css">
+	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/bootstrap.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
@@ -12,7 +13,6 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	 crossorigin="anonymous"></script>
-	<script src="scripts/eventPro.js"></script>
 	<link rel="stylesheet" href="style/eventPro.css">
 </head>
 
@@ -41,37 +41,138 @@
  </div>
 </header>
 
+		<!-- Modal login/register box-->
+		<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-labelledby="login/register page" aria-hidden="true" keyboard="false"  backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Log In</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="login-form">
+						<form id="login" method="#" action="#">
+							<div class="form-group">
+								<label for="username" class="control-label">Username</label>
+								<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
+								placeholder="example@gmail.com">
+								<span class="help-block"></span>
+							</div>
+							<div class="form-group">
+								<label for="password" class="control-label">Password</label>
+								<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+								<span class="help-block"></span>
+							</div>
+						</form>
+						<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary register_bn">Register</button>
+						<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
 	<section id="events_nearby">
 	<a href="#" id="nearby-btn" class="main-nav-btn">
 		<h3>
 		EVENTS NEARBY
 		</h3>
 	</a>
-<div class="search_result">	
-<div id="item-list">
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	<div id="item-G5vYZfVK3Et5h" class="event_postcard item" data-item_id="G5vYZfVK3Et5h" data-favorite="undefined">
-		<div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div>
-		<div class="postcard_content">
-			<div class="event_title"><a href="http://www.ticketmaster.com/997-now-presents-poptopia-san-jose-california-12-02-2017/event/1C005344D29E92DB" target="_blank" class="item-name">99.7 NOW! Presents POPTOPIA</a></div>
-			<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
-		</div>
-		<div class="event_price"><p class="item-category">Music</p></div>
-		<div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div>
-	</div>
-</div>
 
+	
+	<div class="search_result">
+			<div id="item-list" class="item-list">
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfSl2uE4J" class="event_postcard item" data-item_id="G5vYZfSl2uE4J" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/9ef/88a98e97-c639-473d-a888-bcdc249869ef_533891_TABLET_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/wild-949s-jingle-ball-presented-by-san-jose-california-11-30-2017/event/1C00533ACF367566" target="_blank" class="item-name">WiLD 94.9's Jingle Ball presented by Capital One</a></div><div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div></div><div class="event_price"><p class="item-category">Music</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div id="item-G5vYZfYEZzzOK" class="event_postcard item" data-item_id="G5vYZfYEZzzOK" data-favorite="undefined"><div class="postcard_image"><img src="https://s1.ticketm.net/dam/a/bdd/779fab35-f530-4af4-a6e0-d4197c140bdd_29271_RETINA_PORTRAIT_16_9.jpg" class="search_result_img" alt="item image"></div><div class="postcard_content"><div class="event_title"><a href="http://www.ticketmaster.com/golden-state-warriors-vs-denver-nuggets-oakland-california-12-23-2017/event/1C005309C0E38813" target="_blank" class="item-name">Golden State Warriors vs. Denver Nuggets</a></div><div class="event_date_location"><p class="item-address">7000 Coliseum Way<br>Oakland</p></div></div><div class="event_price"><p class="item-category">Sports</p></div><div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div></div></div>
-</div>
-</div>		
-		<div class="signin_page">
-			<div class="page_mark">
-				Here are some events nearby.
+				<div class="pages">
+					<div class="page page1 page-active">
+				<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page1</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+
+				</div>
+
+				<div class="page page2">
+				<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page2</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="page page3">
+					<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page3</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+
+				</div>
+
+				<div class="page page4">
+				<!-- one card example - Mengdie -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div id="item-G5vYZfSfPYh_1" class="event_postcard item" data-item_id="G5vYZfSfPYh_1" data-favorite="undefined">
+							<div class="postcard_image">
+								<img src="https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg" class="search_result_img" alt="item image">
+							</div>
+							<div class="postcard_content">
+								<div class="event_title"><a href="http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A" target="_blank" class="item-name">Ozuna "Odiesa Society Tour"</a></div>
+								<div class="event_date_location"><p class="item-address">525 W Santa Clara<br>San Jose</p></div>
+							</div>
+							<div class="event_price col-8"><p class="item-category">Page4</p></div>
+						<div class="event_heart fav-link col-4 fa-heart"></div>
+					</div>
+				</div>
+				</div>
+				</div>
+
 			</div>
-			<div class="favorite_result">
-			</div>							
+		</div>
 
+	                
+		<div class="pagination-container">
+			<div class="pagination">
+				<a class="pag_prev" href="#">&laquo;</a>
+				<a class="active pn1 pag" href="#">1</a>
+				<a class="pn2 pag" href="#">2</a>
+				<a class="pn3 pag" href="#">3</a>
+				<a class="pn4 pag" href="#">4</a>
+				<a class="pag_next" href="#">&raquo;</a>
+			</div>
+		</div>
 	</section>
 
     <footer>
@@ -85,5 +186,6 @@
 		</aside>
 	</footer> 
 </body>
-<script src="scripts/nearby.js"></script>
+<!-- <script src="script/nearby.js"></script> -->
+<script src="script/eventPro.js"></script>
 </html>

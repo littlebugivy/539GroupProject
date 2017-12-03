@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EventPro</title>
-	<link rel="stylesheet" href="style/main2.css">
+	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/bootstrap.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
@@ -17,6 +18,7 @@
 </head>
 
 <body class="main-container">
+
 
 <header>
 <div>
@@ -40,6 +42,44 @@
   </div>
  </div>
 </header>
+
+
+	
+		<!-- Modal login/register box - Mengdie -->
+		<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-labelledby="login/register page" aria-hidden="true" keyboard="false"  backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Log In</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="login-form">
+						<form id="login" method="#" action="#">
+							<div class="form-group">
+								<label for="username" class="control-label">Username</label>
+								<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username"
+								placeholder="example@gmail.com">
+								<span class="help-block"></span>
+							</div>
+							<div class="form-group">
+								<label for="password" class="control-label">Password</label>
+								<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+								<span class="help-block"></span>
+							</div>
+						</form>
+						<span text-center class="forgetpw"><a href="#">Forget Password?</a></span>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary register_bn">Register</button>
+						<button type="button" class="btn btn-primary submit_bn" data-dismiss="modal" id="login-btn">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+>>>>>>> 058b3050ad87aefc00769b02895431092f9c7251
 
 	<section id="my_favorite">
 		<div class="my-col-1-3">

@@ -310,6 +310,7 @@ footer{
   transition-duration: 0s;
 }
 
+/* is-active */
 .is-active{
 	transition-duration: 1s;
     background-position: -2800px 0;
@@ -525,6 +526,37 @@ h4{
 .item{
 	background-color: #ffffff;
 }
+
+.pagination-container{
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #df574b;
+    color: white;
+}
+
+.page{
+	display: none;
+}
+
+.page-active{
+	display: block;
+}
+
 
 
 
