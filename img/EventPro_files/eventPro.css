@@ -362,7 +362,6 @@ footer{
 }
 
 .support_submit_success{
-	width: 100%;
 	display:none;
 	margin:0 auto;
 }
@@ -373,10 +372,11 @@ footer{
 }
 
 .support_back_container{
-	width:100%;
+	width: 100%;
 	text-align: center;
 	margin:30px;
 }
+
 
 .supportform legend{
 	background:#df574b;
@@ -411,11 +411,6 @@ footer{
 	border:1px solid #979797;
 	border-radius:5px;
 	height:38px;
-}
-
-.support_warning_email{
-	color:#df574b;
-	display:none;
 }
 
 #questions{

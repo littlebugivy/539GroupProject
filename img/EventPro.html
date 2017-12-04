@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&emailaddr=&phonenumber=&body=# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventPro</title>
+  <link rel="stylesheet" href="./EventPro_files/main.css">
+  <link rel="stylesheet" href="./EventPro_files/bootstrap.css">
+  
+  <script src="./EventPro_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="./EventPro_files/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="./EventPro_files/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./EventPro_files/eventPro.css">
+</head>
+
+<body class="main-container">
+
+<header>
+<div>
+  <div class="nav-header">
+    <h1><a href="file:///Users/IvyLin/539GroupProject/index.html" class="nav-title">
+      EventPro
+    </a></h1>
+  </div>
+  <div class="nav-btn">
+ <label for="nav-check">
+     <img src="./EventPro_files/menu.png" alt="menu_icon" class="menu_icon">
+</label>
+
+    
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="file:///Users/IvyLin/539GroupProject/eventnearby.html" target="_self">events nearby</a>
+    <a href="file:///Users/IvyLin/539GroupProject/supportcenter.html" target="_self">support center</a>
+  <a href="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#" class="nav_login" data-toggle="modal" data-target="#loginform" target="_self" style="display: none;">sign in/ register</a>
+  <a href="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#" class="user_info" target="_self" style="display: inline-block;">afdasdfdfs</a>
+  <div class="drop-down-content">
+    <ul>
+        <li><a href="file:///Users/IvyLin/539GroupProject/profile.html">My Profile</a></li>
+        <li><a href="file:///Users/IvyLin/539GroupProject/favourite.html" class="main-nav-btn">My Favorite</a></li>
+        <li><a href="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#" class="main-nav-btn log-out">Log Out</a></li>
+      </ul>
+  </div>
+  </div>
+ </div>
+</header>
+
+  <!-- Modal login/register box - Mengdie-->
+  <div class="modal fade" id="loginform" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body" id="login-form">
+          <form id="login" action="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#">
+            <div class="form-group">
+              <label for="username" class="control-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="email or username">
+              <div class="help-block"></div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+              <div class="help-block"></div>
+            </div>
+          </form>
+          <div class="forgetpw"><a href="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#">Forget Password?</a></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary register_bn newuser">Register</button>
+          <button type="button" class="btn btn-primary submit_bn newuser" data-dismiss="modal" id="login-btn">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="support_center" class="support_center_container">
+    <h3>SUPPORT CENTER</h3>
+    <div class="row support_submit_success" style="display: block;">
+      <div class=""></div>
+      <div class="col-lg-1 col-md-1">
+        <img src="./EventPro_files/success.png">
+        </div>
+      <div class="col-lg-7 col-md-6 success_msg">
+      Your question has been submitted! Our staff will get back to you soon.
+      </div>
+      <div class=""></div>
+      <div class="support_back_container">
+        <a href="file:///Users/IvyLin/539GroupProject/index.html">Back To Main Page</a>
+      </div>
+    </div>
+
+
+      <form action="file:///Users/IvyLin/539GroupProject/supportcenter.html?subject=&amp;emailaddr=&amp;phonenumber=&amp;body=#" id="supportform" class="supportform" style="display: none;">
+         <fieldset>
+          <legend class="otherform">Report your questions</legend>
+           <p>If you have problems with this website or just want to contact us, please submit information below. We will contact you as soon as possible.</p>
+
+           <div class="form-group">
+              <label for="subject">
+              Subject <br>
+                <input id="subject" type="text" class="form-control" name="subject">
+              </label>
+          </div>
+
+            <div class="form-group">
+              <label for="emailaddr">
+              Email Adress<br>
+              <input type="email" class="form-control" name="emailaddr" id="emailaddr">
+              </label>
+            </div>
+
+
+            <div class="form-group">
+            <label for="phonenumber">
+              Phone number <br>
+                <input type="text" class="form-control" name="phonenumber" id="phonenumber">
+              </label>
+            </div>
+
+
+            <div class="form-group">
+            <label for="questions">
+              Your questions<br>
+              <textarea name="body" class="form-control" id="questions"></textarea>
+            </label>
+          </div>
+
+            </fieldset>
+          <button type="submit" class="btn btn-default submit_button supportform_submit">Submit</button>
+      </form>
+  </section>
+
+<!-- footer -->
+
+    <footer>
+    <div class="col-lg-6 col-sm-12">
+      <h5>About our team:</h5>
+      <p>Chen Li<br>Mengdie Lin<br>Meng Yuan<br>Wen Xin</p><p>
+    </p></div><aside class="col-lg-6 col-sm-12">
+      <h5>Email us:</h5>
+      <p>4webdesigner@umich.edu</p>
+      <p>© 4webdesigners. All rights reserved</p>            
+    </aside>
+  </footer> 
+  <script src="./EventPro_files/eventPro.js"></script>
+
+
+</body></html>
