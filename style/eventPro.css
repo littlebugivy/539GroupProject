@@ -109,6 +109,10 @@ a.user_info{
 	display:none;
 }
 
+.drop-down-content ul{
+	margin-bottom:0px;
+}
+
 @media (max-width:800px) {
 .nav-btn {
     display: inline-block;
@@ -309,15 +313,17 @@ a.seemore{
 footer{
 	background-color: #565150;
 	overflow: hidden;
-	padding: 40px 100px;
+	padding: 2% 15%;
 	font-family:MyriadPro-Semibold;
     font-size:16px;
     color:#ffffff;
 }
 
-.col-lg-6{
-	float: left;   
+footer .col-lg-6{
+	padding-left:6%;
+	max-width: none;
 }
+
 
 /*nearby page*/
 .page_title span{
@@ -424,7 +430,7 @@ footer{
 	height:276px;
 }
 
-#supportform .submit_button{
+.supportform .submit_button{
 	background:#df574b;
 	border-radius:5px;
 	width:200px;
@@ -440,11 +446,15 @@ footer{
 	text-transform: uppercase;
 }
 
-/*My Protfolio*/
-#my_profile,#my_favorite{
-	width:90%;
-	margin:0 auto;
+/*My profile*/
+.my_profile,#my_favorite{
+	width:60%;
+	margin:50px auto;
 	margin-top:50px;
+}
+
+.my_profile .form-group label{
+	width:100%;
 }
 
 .my-col-1-3,
@@ -481,6 +491,10 @@ h2{
 	margin-bottom: 30px;
 }
 
+.file-upload {
+	display: none;
+}
+
 li{
 	list-style-type: none;
 }
@@ -503,14 +517,15 @@ li{
 	margin:20px 10px;
 }
 
-#myform{
+
+.profile_form{
 	background:#ffffff;
 	width:100%;
-	margin:0 auto;
-	margin-bottom: 50px;
+	padding:20px 0px;
+	margin:0px auto;
 }
 
-#myform p{
+.profile_form p{
 	font-family:MyriadPro-Regular;
 	font-size:16px;
 	color:#565150;
@@ -519,12 +534,20 @@ li{
 	padding: 0px 38px 0px;
 }
 
-#myform input{
+.profile_form input{
 	border:1px solid #979797;
 	border-radius:5px;
 	width:100%;
 	height:38px;
 }
+
+/* input[readonly]{
+	background-color:#ffffff;
+	border: 0;
+	font-size: 1em;
+  }
+ */
+
 
 #my_avatar_right{
 	border-radius:5px;
@@ -532,7 +555,7 @@ li{
 	height:75px;
 }
 
-#myform button[type="submit"]{
+.profile_form button[type="submit"]{
 	background:#df574b;
 	border-radius:5px;
 	width:120px;
@@ -544,10 +567,10 @@ li{
 	border-style: none;
 	padding-top: 9px;
 	padding-bottom: 11px;
-	margin: 20px 38px 50px;
+	margin: 20px 38px 30px;
 }
 
-#myform input[name="avatar"]{
+.profile_form input[name="avatar"]{
  border-radius:10px;
  font-family:MyriadPro-Regular;
  font-size:16px;
@@ -580,6 +603,8 @@ h4{
 	background-color: #ffffff;
 }
 
+
+/* pagination */
 .pagination-container{
 	width:100%;
 	text-align:center;
@@ -621,3 +646,13 @@ h4{
 	color: #df574b;
 }
 
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+.alert{
+	display: none;
+}

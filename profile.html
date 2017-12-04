@@ -84,65 +84,70 @@
     </div>
   </div>
 
-
-  <section id="my_profile">
+  <section id="my_profile" class='my_profile row'>
     <div class="col-lg-3 col-sm-12">
       <h2>{{name}}</h2>
-      <img src="img/avatar.png" alt="my_avatar_now" id="my_avatar_left">
+
+      <img src="img/avatar.png" class="profile-pic"  alt="my_avatar_change" id="my_avatar_left"><input type="file" name="avatar"  id="myavator" class="file-upload" accept="image/*">
             <ul>
                 <li><a href="profile.html" class="my_link chosen">My Profile</a></li>
                 <li><a href="favourite.html" class="my_link">My Favorite</a></li>
             </ul>
     </div><!--
   --><aside class="col-lg-9 col-sm-12">
-      <form onsubmit="return checkMyForm()" id="myform">
+      <div class="alert alert-success">
+          <strong>Success!</strong> Your information is updated.
+        </div>
+      <div id="myform" class="profile_form" >
          <fieldset>
             <div class="form-group">
               <label class="personal" for="myusername">
-              user name<br>
-                <input type="text" class="form-control" name="username" id="myusername" value="{{name}}">
+              User Name<br>
+                <input type="text" class="form-control" name="username" id="myusername" value="{{name}}" readonly>
               </label>
             </div>
             <div class="form-group">
               <label for="myaccountemailaddr">
-              account email<br>
-              <input type="email" class="form-control" name="accountemailaddr" id="myaccountemailaddr" value="fourwebdesigners@umich.edu">
+              Email<br>
+              <input type="email" class="form-control" name="accountemailaddr" id="myaccountemailaddr" value="fourwebdesigners@umich.edu" readonly>
               </label>
             </div>
             <div class="form-group"> 
                 <label for="mypassword">
-                 password<br>
-                <input type="password" class="form-control" name="password" id="mypassword" value="1111">
+                 Password<br>
+                <input type="password" class="form-control" name="password" id="mypassword" value="1111" readonly>
               </label>
-            </div>
-            <div class="form-group">
-              <img src="img/avatar.png" alt="my_avatar_change" id="my_avatar_right"><br>
-              <label for="myavator">upload avatar:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
             </div>
             <div class="form-group" >
             <label for="myphonenumber">
-              phone number<br>
-                <input type="text" class="form-control" name="phonenumber" id="myphonenumber" value="7348829688">
+              Phone Number<br>
+                <input type="text" class="form-control" name="phonenumber" id="myphonenumber" value="7348829688" readonly>
               </label>
             </div>           
           </fieldset>
-          <button type="submit" class="btn btn-default submit_button">Save</button>
-      </form>
+          <button type="submit" class="btn btn-default editorsave">Edit</button>
+        </div>
     </aside>
   </section>
 
 
+  <!-- <div class="form-group">
+      <img src="img/avatar.png" alt="my_avatar_change" id="my_avatar_right"><br>
+      <label for="myavator">Upload:<input type="file" name="avatar" id="myavator" accept="image/*"></label>
+    </div> -->
+
 <!-- footer -->
 
-    <footer>
+<footer class="row">
     <div class="col-lg-6 col-sm-12">
       <h5>About our team:</h5>
-      <p>Chen Li<br>Mengdie Lin<br>Meng Yuan<br>Wen Xin<p>
-    </div><aside class="col-lg-6 col-sm-12">
-      <h5>Email us:</h5>
-      <p>4webdesigner@umich.edu</p>
-      <p>&copy; 4webdesigners. All rights reserved</p>            
-    </aside>
+      <p>Li Cheng<br>Lin Mengdie<br>Meng Yuan<br>Wen Xin</p>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+       <h5>Email us:</h5>
+       <p>4webdesigner@umich.edu</p>
+       <p>&copy; 4webdesigners. All rights reserved</p>						
+    </div>
   </footer> 
   <script src="script/eventPro.js"></script>
 </body>
