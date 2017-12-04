@@ -44,7 +44,7 @@ $(function () {
         var window_width = $('body').width();
         console.log(window_width);
            if(window_width < 1000){
-            var margin_bottom = 450 - window_width * 0.4;
+            var margin_bottom = 480 - window_width * 0.4;
             $('.large-banner-container').css("margin-bottom", margin_bottom + 'px');
         }
     })

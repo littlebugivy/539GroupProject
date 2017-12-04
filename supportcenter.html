@@ -87,26 +87,17 @@
 
   <section id="support_center">
     <h3>SUPPORT CENTER</h3>
-      <form action="mailto:fourwebdesigners@umich.edu" id="supportform" onsubmit="return checkForm()">
+      <form action="mailto:fourwebdesigners@umich.edu?cc=fourwebdesigners@umich.edu" id="supportform" onsubmit="return checkForm()">
          <fieldset>
           <legend class="otherform">Report your questions</legend>
            <p>If you have problems with this website or just want to contact us, please submit information below. We will contact you as soon as possible.</p>
 
            <div class="form-group">
-              <label for="firstname">
-              First name <br>
-                <input type="text" class="form-control" name="firstname" id="firstname">
+              <label for="subject">
+              Subject <br>
+                <input type="text" class="form-control" name="subject">
               </label>
           </div>
-
-
-          <div class="form-group">
-              <label for="lastname">
-              Last name <br>
-                <input type="text" class="form-control" name="lastname" id="lastname">
-              </label>
-          </div>
-
 
             <div class="form-group">
               <label for="emailaddr">
@@ -125,9 +116,9 @@
 
 
             <div class="form-group">
-            <label>
+            <label for="body">
               Your questions<br>
-              <textarea name="questions" class="form-control" id="questions"></textarea>
+              <textarea name="body" class="form-control" id="questions"></textarea>
             </label>
           </div>
 
