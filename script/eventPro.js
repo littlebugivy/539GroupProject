@@ -42,7 +42,6 @@ $(function () {
         $('.fa-heart').width(heart_height + 'px');
         $('.fa-heart').css("margin-top", ratio + "px")
         var window_width = $('body').width();
-        console.log(window_width);
            if(window_width < 1000){
             var margin_bottom = 480 - window_width * 0.4;
             $('.large-banner-container').css("margin-bottom", margin_bottom + 'px');
@@ -73,7 +72,7 @@ $(function () {
     
             console.log('number_load',num_load, 'counter:',counter, limit)
             for(var i=0; i<limit; i++) {
-            $(".item-list").append("<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12'><div id='item-G5vYZfSfPYh_1' class='event_postcard item' data-item_id='G5vYZfSfPYh_1' data-favourite='undefined'><div class='postcard_image'><img src='https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg' class='search_result_img' alt='item image'></div><div class='postcard_content'><div class='event_title'><a href='http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A' target='_blank' class='item-name'>Ozuna Odiesa Society Tour</a></div><div class='event_date_location'><p class='item-address'>525 W Santa Clara<br>San Jose</p></div></div><div class='event_price col-8'><p class='item-category'>Music</p></div><div class='event_heart fav-link col-4 fa-heart'></div></div></div>")
+            $(".item-list").append("<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12'><div id='item-G5vYZfSfPYh_1' class='event_postcard item' data-item_id='G5vYZfSfPYh_1' data-favourite='undefined'><div class='postcard_image'><img src='https://s1.ticketm.net/dam/a/375/606d24be-8ead-40aa-a622-22e5dfd02375_562662_RETINA_LANDSCAPE_16_9.jpg' class='search_result_img' alt='item image'></div><div class='postcard_content'><div class='event_title'><a href='http://www.ticketmaster.com/ozuna-odiesa-society-tour-san-jose-california-12-03-2017/event/1C00533525C1B64A' target='_self' class='item-name'>Ozuna Odiesa Society Tour</a></div><div class='event_date_location'><p class='item-address'>525 W Santa Clara<br>San Jose</p></div></div><div class='event_price col-8'><p class='item-category'>Music</p></div><div class='event_heart fav-link col-4 fa-heart'></div></div></div>")
 
             var card_height = $('.event_postcard').height();
             var ratio = -1 * card_height / 240 * 90;
@@ -110,6 +109,7 @@ $(function () {
     // login get user name
     $('.newuser').on('click', function(){
 
+        console.log('login');
         // TODO: js validation needed - password
         var username = $('#username').val();  
         sessionStorage.setItem('username', username);    
@@ -119,6 +119,7 @@ $(function () {
     })
 
     $('.user_info').on('click',function(){
+        console.log('userinfo')
         var width = $('.user_info').width();
         $('.drop-down-content').width(width+81); // padding
         $('.drop-down-content').css('display','block')

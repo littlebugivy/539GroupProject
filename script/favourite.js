@@ -318,7 +318,7 @@
 
 		var title = $('a', {
 			href : item.url,
-			target : '_blank',
+			target : '_self',
 			className : 'item-name'
 		});
 		title.innerHTML = item.name;
