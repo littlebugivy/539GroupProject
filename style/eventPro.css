@@ -486,8 +486,9 @@ footer .col-lg-6{
 
 /*My profile*/
 .my_profile,#my_favorite{
-	width:60%;
-	margin:50px auto;
+	width: 90%;
+	margin: 50px;
+	margin: 0 auto;
 	margin-top:50px;
 }
 
