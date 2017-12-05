@@ -1,4 +1,5 @@
-
+// <!-- one card example -->
+// <!-- **** MENGDIE LIN  contribution – SI 539**** -->
 $(function(){
     var username = sessionStorage.getItem('username');
     console.log('user name: ' ,username);
@@ -23,17 +24,11 @@ $('.carousel').carousel({
 
 $(function () {
     var height = $(".large-banner-container").height();
-   /* $('.search-form').height(height / 1.4)
-    *$('.search-form').css("top", height * 0.2)
-    $('.search-form').css("bottom", height * 0.2)*/
     $('.event_postcard').height(240);
     $('.fa-heart').css('margin-top', '-90px');
 
     $(window).resize(function () {
         var newheight = $(".large-banner-container").height();
-        /*$('.search-form').height(newheight / 1.4);
-        $('.search-form').css("top", newheight * 0.2)
-        $('.search-form').css("bottom", newheight * 0.2)*/
         $('.event_postcard').height($('.event_postcard').width())
         var card_height = $('.event_postcard').height();
         var ratio = -1 * card_height / 240 * 90;
