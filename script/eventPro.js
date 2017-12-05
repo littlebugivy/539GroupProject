@@ -66,6 +66,7 @@ $(function () {
                 limit = 8;
             }else if(counter==num_load){
                 limit = num_final_load;
+                $('.seemore').hide();
             }else{
                 return;
             }
