@@ -356,7 +356,6 @@ footer .col-lg-6{
 
 
 /*support center*/
-
 .support_center_container{
 	width: 60%;
 	margin:0 auto;
@@ -376,12 +375,6 @@ footer .col-lg-6{
 .success_msg{
 	font-size: 16px;
 	margin:auto 20px;
-}
-
-.support_back_container{
-	width:100%;
-	text-align: center;
-	margin:30px;
 }
 
 .supportform legend{
@@ -428,6 +421,50 @@ footer .col-lg-6{
 	border:1px solid #979797;
 	border-radius:5px;
 	height:276px;
+}
+
+.submit_button{
+	background:#df574b;
+	border-radius:5px;
+	width:280px;
+	height:61px;
+	color:white;
+	font-family:MyriadPro-Semibold;
+	font-size:24px;
+	text-align:center;
+	vertical-align: center;
+	text-transform: uppercase;
+	margin:0 auto;
+	margin-top: 60px;
+}
+
+.back_button{
+	color: white;
+	background:#df574b;
+	border-radius:5px;
+	width:280px;
+	line-height:61px;
+}
+
+.back_button:hover{
+	text-decoration: none;
+	color:white;
+}
+
+.support_back_container{
+	width:100%;
+	text-align: center;
+	margin:30px;
+	background:#df574b;
+	border-radius:5px;
+	width:280px;
+	height:61px;
+	font-family:MyriadPro-Semibold;
+	font-size:24px;
+	text-align:center;
+	vertical-align: center;
+	margin:0 auto;
+	margin-top:50px;
 }
 
 .supportform .submit_button{

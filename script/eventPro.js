@@ -119,10 +119,14 @@ $(function () {
     })
 
     $('.user_info').on('click',function(){
-        console.log('userinfo')
-        var width = $('.user_info').width();
-        $('.drop-down-content').width(width+81); // padding
-        $('.drop-down-content').css('display','block')
+        if($('.drop-down-content').css('display') == 'none'){
+            console.log('userinfo')
+            var width = $('.user_info').width();
+            $('.drop-down-content').width(width+81); // padding
+            $('.drop-down-content').css('display','block')
+        }else{
+            $('.drop-down-content').css('display','none')
+        }
     })
 })
 
