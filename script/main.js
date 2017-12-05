@@ -340,7 +340,7 @@
 		// create the <li> tag and specify the id and class attributes
 		//<div class="col-lg-3">
 		var col_lg_3 = $('div',{
-			className : 'col-lg-3'
+			className : 'col-lg-3 col-md-4 col-sm-6 col-xs-12'
 		});
 
 		//<div class="event_postcard item col-lg-3">
@@ -415,7 +415,7 @@
 
 		//div class="event_price"><p class="item-category">Music</p></div>
 		var event_categorydiv = $('div',{
-			className: 'event_price'
+			className: 'event_price col-8'
 		});
 		var category = $('p', {
 			className : 'item-category'
@@ -426,15 +426,9 @@
 
 		//<div class="event_action fav-link"><img src="img/heart.png" class="event_heart fa fa-heart"></div>
 		var heartdiv= $ ('div',{
-			className : 'event_action fav-link'
+			className : 'event_heart fav-link col-4 fa-heart'
 		});
 
-		var heart = $ ('img',{
-			src : 'img/heart.png',
-			className : 'event_heart fa fa-heart'
-		})
-
-		heartdiv.appendChild(heart);
 		postitem.appendChild(heartdiv);
 		col_lg_3.appendChild(postitem);
 		itemList.appendChild(col_lg_3);
