@@ -444,6 +444,7 @@ footer .col-lg-6{
 	border-radius:5px;
 	width:280px;
 	line-height:61px;
+	text-transform: uppercase;
 }
 
 .back_button:hover{
