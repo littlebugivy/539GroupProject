@@ -208,14 +208,6 @@ $(function(){
 })
 
 
-$(function(){
-    $('.search_button').on('click',function(){
-        var location = $('#location').val();
-        console.log(location);
-    })
-})
-
-
 $(function() {
         var readURL = function(input) {
             if (input.files && input.files[0]) {
